@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins", sans-serif;
+    box-sizing: border-box;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background: hsl(0, 95%, 63%);
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    margin: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list{
+    display: none;
+}
+ nav ul li {
+    display: inline-block;
+    list-style: none;
+ }
+ nav ul li a{
+    text-decoration: none;
+    margin: 0 23px;
+   font-size: 18px;
+   color: #000;
+ }
+nav ul li::after{
+    content: "";
+    width: 0%;
+    background: #85e6d9;
+    height: 3px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 60%;
+}
+.hero{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(3, 3, 3, 0.267), rgba(8, 8, 8, 0.65)), url(hero.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;              
+    justify-content: center;  
+    align-items: center;         
+    text-align: center;
+    margin-bottom: 28px; 
+}
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 40px;
+    max-width: 400px;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 20px auto 0;   
+}
+
+.hero h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.search-box{
+    display: flex;
+    margin-right: 20px;
+    background: #fff;
+    border-radius: 40px;
+    max-width: 400px;
+
+}
+.search-box img{
+    width: 19px;
+    margin: auto 8px;
+}
+.search-box input{
+    width: 50%;
+    border: none;
+    outline: none;
+    padding: 10px 6px;
+}
+.search-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+.btn {
+    
+    background: transparent;
+    padding: 10px 8px;
+    border-radius: 40px; 
+    width: 180px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.btn span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;             
+    height: 100%;          
+    background: #0bfc6f;
+    border-radius: 25px;
+    z-index: -1;           
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    width: 100%;           
+}
+
+.btn:hover {
+    color: #fff;  
+}
+
+
+.recipes h2{
+text-align: center;
+font-size: 35px;
+color: #555;
+margin-bottom: 30px;
+
+}
+.recipes-section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   column-gap: 20px; 
+}
+   .recipe-card {
+    background: #d9eb78;
+    border-radius: 10px;
+    height: 470px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+   
+}
+.recipe-card img {
+    width: 100%;         
+    height: 300px;       
+    object-fit: cover;   
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.recipe-card p{
+  color: #555;
+}
+.recipe-card a {
+    margin-top: auto;  
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.recipe-card a:hover{
+    background: #ebbb1f;
+    color: #fff;
+}
+.menu-icon{
+    font-size: 34px;
+    padding: 4px;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+}
+@media only screen and (min-width:768px) {
+ .menu-icon{
+    display: none;
+ }
+ .nav-list{
+    display: block;
+ }
+}
+@media only screen and (max-width:768px) {
+ .hero h2{
+    font-size: 28px;
+ }
+ .hero p{
+   font-size: 15px;
+ }
+ .search-box{
+    margin-left: 17px;
+ }
+ .btn{
+    font-size: 15px;
+ }
+}
+
+
