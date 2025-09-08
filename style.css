@@ -331,7 +331,7 @@ transform: translateY(-7px);
     }
 }
 
-/* Responsive */
+
 @media only screen and (max-width:768px) {
     .footer-row {
         flex-direction: column;
