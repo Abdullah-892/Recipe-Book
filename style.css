@@ -199,10 +199,8 @@ text-align: center;
 font-size: 35px;
 color: #555;
 margin-bottom: 30px;
-
 }
 
-/* Footer */
 #footer {
     position: relative;
     background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(vegetable.jpg);
@@ -325,26 +323,6 @@ font-size: 20px;
 .testimonial-col:hover{
 transform: translateY(-7px);
 }
-@media screen and (max-width: 768px) {
-    .testimonial-col{
-        flex-basis: 100%;
-    }
-}
-
-
-@media only screen and (max-width:768px) {
-    .footer-row {
-        flex-direction: column;
-        text-align: center;
-    }
-    .title-text p{
-        font-size: 20px;
-    }
-    .footer-left, .footer-right {
-        flex-basis: 100%;
-    }
-}
-
 
 @media only screen and (min-width:768px) {
  .menu-icon{
@@ -367,6 +345,19 @@ transform: translateY(-7px);
  .btn{
     font-size: 15px;
  }
+  .testimonial-col{
+        flex-basis: 100%;
+    }
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .title-text p{
+        font-size: 20px;
+    }
+    .footer-left, .footer-right {
+        flex-basis: 100%;
+    }
 }
 
 
