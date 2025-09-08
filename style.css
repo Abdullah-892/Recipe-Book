@@ -124,7 +124,7 @@ nav ul li:hover::after{
     bottom: 0;
     width: 0;             
     height: 100%;          
-    background: #0bfc6f;
+    background: #4c5c53;
     border-radius: 25px;
     z-index: -1;           
     transition: 0.5s;
@@ -194,7 +194,13 @@ margin-bottom: 30px;
     display: block;
     text-align: right;
 }
+.coustomer h2{
+text-align: center;
+font-size: 35px;
+color: #555;
+margin-bottom: 30px;
 
+}
 
 /* Footer */
 #footer {
@@ -234,15 +240,15 @@ text-align: center;
 .footer-left h1, .footer-right h1 {
     margin-bottom: 15px;
 }
-footer-left .fa, .footer-right .fa {
+.footer-left .fa, .footer-right .fa {
     font-size: 20px;
-    color: #fff;  /* 🔹 white rakho taake visible ho */
+    color: #fff; 
     margin-right: 10px;
 }
 .social-links {
     position: relative;
     z-index: 1;
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -269,6 +275,60 @@ footer-left .fa, .footer-right .fa {
     margin-top: 15px;
     color: #fff;
     font-size: 14px;
+}
+#testimonial h1{
+    text-align: center;
+font-size: 35px;
+color: #555;
+margin-bottom: 60px;
+}
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    background: rgb(235, 232, 232);
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition: transform .5s
+    ;
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.user-info .fa{
+margin-left: 10px;
+color: #27c0ff;
+font-size: 20px;
+}
+.user-info small{
+    color: #009688;
+}
+.testimonial-col:hover{
+transform: translateY(-7px);
+}
+@media screen and (max-width: 768px) {
+    .testimonial-col{
+        flex-basis: 100%;
+    }
 }
 
 /* Responsive */
